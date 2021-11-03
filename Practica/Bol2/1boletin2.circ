@@ -15,7 +15,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#C:\Users\alexo\Documents\GitHub\SistemasDigitales\Practica\Bol1\Ej 2\EJERCICIO 2.1.circ" name="7"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -58,7 +57,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(430,90)" to="(430,160)"/>
     <wire from="(340,110)" to="(400,110)"/>
     <wire from="(180,110)" to="(180,180)"/>
+    <wire from="(280,120)" to="(300,120)"/>
     <wire from="(250,90)" to="(250,100)"/>
+    <wire from="(400,80)" to="(420,80)"/>
     <wire from="(250,100)" to="(300,100)"/>
     <wire from="(200,90)" to="(250,90)"/>
     <wire from="(320,130)" to="(320,140)"/>
@@ -67,16 +68,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(400,80)" to="(400,110)"/>
     <wire from="(450,70)" to="(550,70)"/>
     <wire from="(430,160)" to="(530,160)"/>
+    <wire from="(180,180)" to="(380,180)"/>
     <wire from="(60,80)" to="(160,80)"/>
     <wire from="(60,100)" to="(160,100)"/>
     <wire from="(250,60)" to="(250,90)"/>
-    <wire from="(280,120)" to="(300,120)"/>
-    <wire from="(400,80)" to="(420,80)"/>
-    <wire from="(180,180)" to="(380,180)"/>
-    <comp lib="3" loc="(340,110)" name="Adder">
+    <comp lib="3" loc="(200,90)" name="Adder">
       <a name="width" val="4"/>
     </comp>
     <comp lib="2" loc="(450,70)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(530,90)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(60,100)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="3" loc="(340,110)" name="Adder">
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(550,70)" name="Pin">
@@ -85,26 +96,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(530,90)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(280,120)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="1" loc="(430,160)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(60,80)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="3" loc="(200,90)" name="Adder">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(280,120)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(60,100)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
     </comp>
