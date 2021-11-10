@@ -83,7 +83,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(270,140)" to="(280,140)"/>
     <wire from="(130,60)" to="(140,60)"/>
     <wire from="(160,160)" to="(170,160)"/>
-    <wire from="(200,140)" to="(210,140)"/>
     <wire from="(200,160)" to="(210,160)"/>
     <wire from="(300,40)" to="(300,90)"/>
     <wire from="(140,50)" to="(210,50)"/>
@@ -93,23 +92,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(140,230)" to="(340,230)"/>
     <wire from="(130,60)" to="(130,120)"/>
     <wire from="(360,100)" to="(430,100)"/>
+    <comp lib="3" loc="(250,60)" name="Adder">
+      <a name="width" val="4"/>
+    </comp>
     <comp lib="0" loc="(140,270)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="C1/C2"/>
-    </comp>
-    <comp lib="0" loc="(200,140)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(80,160)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="2" loc="(590,100)" name="Multiplexer">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="1" loc="(200,160)" name="NOT Gate">
-      <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(610,100)" name="Pin">
       <a name="facing" val="west"/>
@@ -120,29 +108,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="3" loc="(500,60)" name="Adder">
       <a name="width" val="4"/>
     </comp>
-    <comp lib="3" loc="(250,150)" name="Adder">
+    <comp lib="0" loc="(80,60)" name="Pin">
       <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="2" loc="(360,100)" name="Multiplexer">
       <a name="width" val="4"/>
     </comp>
-    <comp lib="3" loc="(250,60)" name="Adder">
+    <comp lib="0" loc="(410,50)" name="Pin">
       <a name="width" val="4"/>
-    </comp>
-    <comp lib="3" loc="(320,130)" name="Adder">
-      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(140,230)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="suma/resta"/>
     </comp>
-    <comp lib="0" loc="(80,60)" name="Pin">
+    <comp lib="3" loc="(250,150)" name="Adder">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="2" loc="(590,100)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="3" loc="(320,130)" name="Adder">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="1" loc="(200,160)" name="NOT Gate">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(80,160)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(410,50)" name="Pin">
+    <comp lib="0" loc="(210,140)" name="Constant">
       <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
     </comp>
   </circuit>
 </project>
